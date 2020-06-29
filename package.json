@@ -1,0 +1,21 @@
+{
+  "name": "dentclick-templates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "DentClickBootstrapTemplates"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^19.1.1",
+    "handlebars": "^4.7.6",
+    "inert": "^5.1.3",
+    "vision": "^5.4.4"
+  }
+}
