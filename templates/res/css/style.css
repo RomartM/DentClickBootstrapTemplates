@@ -1,0 +1,70 @@
+:root {
+  --main-primary: #185479;
+  --main-secondary: #40B4C1;
+  --main-outline: #CCCCCC;
+  --main-text-secondary: #999999;
+  --main-white: #FFFFFF;
+  --main-text: #373A3C;
+  --btn-green: #6FCF97;
+  --btn-blue: #2D9CDB;
+  --btn-purple: #BB6BD9;
+  --btn-dark-shade-1: #373A3C;
+  --btn-dark-shade-2: #999999;
+  --btn-dark-shade-3: #CCCCCC;
+  --btn-dark-shade-4: #F2F2F2;
+}
+
+body {
+  background-color: var(--main-white);
+}
+
+a.hyperlink {
+  text-decoration: underline;
+  color: var(--main-secondary);
+}
+
+p {
+  color: var(--main-text) !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Custom btn styles */
+.btn {
+  border-radius: 4px !important;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.btn-primary {
+    background-color: var(--main-primary);
+    border-color: var(--main-primary);
+}
+
+.btn-border {
+  background-color: var(--main-white);
+  border-color: var(--main-primary);
+  color: var(--main-primary) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--main-secondary);
+    border-color: var(--main-secondary);
+}
+
+.btn-border:hover {
+  background-color: var(--main-primary);
+  color: var(--main-white) !important;
+}
+
+.separator-10 {
+    padding: 10px;
+}
+
+.separator-20 {
+    padding: 10px;
+}
