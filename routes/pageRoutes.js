@@ -52,7 +52,12 @@ module.exports = [
         method: 'GET',
         path: '/clinic/dashboard',
         handler: (request, reply) => {
-            return reply.view('layout/clinic/admin/dashboard')
+            return reply.view('layout/clinic/admin/dashboard', { custom: {
+              style: true,
+              styleName: 'dashboard',
+              script: true,
+              scriptName: 'dashboard'
+            }})
         }
     },
     {   // Clinic Manage Patients / Basic Info
