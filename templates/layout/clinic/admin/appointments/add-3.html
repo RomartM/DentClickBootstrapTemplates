@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-lg floating-nav">
+  <a class="navbar-button" href="#">
+    <span class="material-icons">arrow_back</span>
+  </a>
+</nav>
+<div class="form-full-page left-align">
+  <h1>New Appointment</h1>
+  <p class="separator-20"></p>
+  <div class="form-group">
+    <label for="exampleInputText1">Patient</label>
+    <select class="custom-select" id="exampleInputText1">
+      <option selected>Select Patient</option>
+      <option value="1">Patient Name</option>
+      <option value="2">Patient Name 1</option>
+      <option value="3">Patient Name 2</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputText2">Doctor</label>
+    <select class="custom-select" id="exampleInputText2">
+      <option selected>Select Doctor</option>
+      <option value="1">Doctor Name</option>
+      <option value="2">Doctor Name 1</option>
+      <option value="3">Doctor Name 2</option>
+    </select>
+  </div>
+  <div class="row">
+    <div class="col">
+        <div class="form-group">
+          <label for="datetimepicker2">Date</label>
+          <div class='input-group date' id='datetimepicker2'>
+            <input type='text' class="form-control" />
+            <span class="input-group-addon">
+              <span class="glyphicon glyphicon-time"></span>
+            </span>
+          </div>
+        </div>
+        <script type="text/javascript">
+          $(function() {
+            $('#datetimepicker2').datetimepicker({
+              format: 'LT'
+            });
+          });
+        </script>
+    </div>
+    <div class="col">
+      <div class="form-group">
+        <label for="exampleFormControlTextarea4">Time</label>
+        <div class='input-group date' id='datetimepicker3'>
+          <input type='text' class="form-control" />
+          <span class="input-group-addon">
+            <span class="glyphicon glyphicon-time"></span>
+          </span>
+        </div>
+        <script type="text/javascript">
+          $(function() {
+            $('#datetimepicker3').datetimepicker({
+              format: 'LT'
+            });
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+  <p class="separator-10"></p>
+  <a class="btn btn-lg btn-primary btn-block" href="#">Confirm Schedule</a>
+</div>

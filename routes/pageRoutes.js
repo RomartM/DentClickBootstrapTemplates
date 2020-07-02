@@ -78,7 +78,30 @@ module.exports = [
         method: 'GET',
         path: '/clinic/appointments/add/1',
         handler: (request, reply) => {
-            return reply.view('layout/clinic/admin/appointments/add-1')
+            return reply.view('layout/clinic/admin/appointments/add-1', { custom: {
+              style: true,
+              styleName: 'full-page-form'
+            } })
+        }
+    },
+    {   // Clinic Appointments Add (New Patient)
+        method: 'GET',
+        path: '/clinic/appointments/add/2',
+        handler: (request, reply) => {
+            return reply.view('layout/clinic/admin/appointments/add-2', { custom: {
+              style: true,
+              styleName: 'full-page-form'
+            } })
+        }
+    },
+    {   // Clinic Appointments Add (New Appointment)
+        method: 'GET',
+        path: '/clinic/appointments/add/3',
+        handler: (request, reply) => {
+            return reply.view('layout/clinic/admin/appointments/add-3', { custom: {
+              style: true,
+              styleName: 'full-page-form'
+            } })
         }
     },
     {   // Clinic Patients (Manage Patients)
