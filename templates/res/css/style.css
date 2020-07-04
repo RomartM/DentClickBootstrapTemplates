@@ -8,6 +8,9 @@
   --btn-green: #6FCF97;
   --btn-blue: #2D9CDB;
   --btn-purple: #BB6BD9;
+  --card-green: #6FCF9740;
+  --card-blue: #2D9CDB40;
+  --card-purple: #BB6BD940;
   --btn-dark-shade-1: #373A3C;
   --btn-dark-shade-2: #999999;
   --btn-dark-shade-3: #CCCCCC;
@@ -42,30 +45,31 @@ p {
 }
 
 .btn-primary {
-    background-color: var(--main-primary);
-    border-color: var(--main-primary);
+  background-color: var(--main-primary);
+  border-color: var(--main-primary);
 }
 
 .btn-border {
-  background-color: var(--main-white);
-  border-color: var(--main-primary);
+  background-color: var(--main-white) !important;
+  border-color: var(--main-primary) !important;
   color: var(--main-primary) !important;
 }
 
 .btn-primary:hover {
-    background-color: var(--main-secondary);
-    border-color: var(--main-secondary);
+  background-color: var(--main-secondary);
+  border-color: var(--main-secondary);
+  color: var(--main-white) !important;
 }
 
 .btn-border:hover {
-  background-color: var(--main-primary);
+  background-color: var(--main-primary) !important;
   color: var(--main-white) !important;
 }
 
 .separator-10 {
-    padding: 10px;
+  padding: 10px;
 }
 
 .separator-20 {
-    padding: 10px;
+  padding: 10px;
 }

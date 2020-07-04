@@ -53,4 +53,58 @@
     e.preventDefault();
   });
 
+  // Calendar
+  $('#calendar').fullCalendar({
+      header: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'month,agendaWeek,agendaDay,listWeek'
+      },
+      defaultDate: '2020-07-04',
+      navLinks: true,
+      eventLimit: true,
+      events: [{
+              title: 'Customer Name',
+              start: '2020-07-16',
+              end: '2020-07-18'
+          },
+          {
+              title: 'Customer Name',
+              start: '2020-07-20',
+              allDay: true
+          },
+          {
+              title: 'Customer Name',
+              start: '2020-07-14T09:00:00',
+              end: '2020-07-14T11:00:00'
+          },
+          {
+              title: 'Customer Name',
+              start: '2020-07-21T19:00:00',
+              end: '2020-07-21T22:00:00'
+          },
+          {
+              title: 'Customer Name',
+              start: '2020-07-15',
+              allDay: true
+          },
+          {
+              title: 'Customer Name',
+              start: '2020-07-23',
+              end: '2020-07-29'
+          },
+      ]
+  });
+
+  function resize_container(){
+    $("#content .container-fluid").height(jQuery(window).height() - 105);
+  }
+
+  // Resize content view port
+  $(window).resize(function(){
+      resize_container()
+  });
+
+  resize_container(); // Init
+
 })(jQuery); // End of use strict

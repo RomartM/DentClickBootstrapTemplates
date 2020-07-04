@@ -1,0 +1,155 @@
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+  <!-- Sidebar -->
+  <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <div class="sidebar-brand-icon">
+        <img src="{{thisURL}}res/images/only-logo.png" alt="" width="60" height="60">
+      </div>
+      <div class="sidebar-brand-text mx-3">Clinic Name</div>
+    </a>
+
+    <!-- Nav Item - Overview -->
+    <li class="nav-item active">
+      <a class="nav-link" href="{{thisURL}}clinic/dashboard">
+        <span class="material-icons">trip_origin</span>
+        <span>Overview</span></a>
+    </li>
+    <!-- Nav Item - Appointments -->
+    <li class="nav-item">
+      <a class="nav-link" href="{{thisURL}}clinic/appointments">
+        <span class="material-icons">insert_invitation</span>
+        <span>Appointments</span></a>
+    </li>
+    <!-- Nav Item - Patients -->
+    <li class="nav-item">
+      <a class="nav-link" href="{{thisURL}}clinic/patients">
+        <span class="material-icons">people</span>
+        <span>Patients</span></a>
+    </li>
+    <!-- Nav Item - Doctors -->
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+        <span class="material-icons">person</span>
+        <span>Doctors</span></a>
+    </li>
+    <!-- Nav Item - Services -->
+    <li class="nav-item">
+      <a class="nav-link" href="{{thisURL}}clinic/treatments">
+        <span class="material-icons">assignment</span>
+        <span>Services</span></a>
+    </li>
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <!-- <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div> -->
+    <div class="sidebar-footer">
+      <a class="nav-link-footer  nav-grey-element" href="#">
+        <span class="material-icons">info</span>
+        <span>Help?</span></a>
+      <div class="nav-link-footer nav-profile" href="#">
+        <a href="#">
+          <img class="sidebar-profile"
+            src="https://s3-alpha-sig.figma.com/img/a2d7/0cf6/fab27240561b11a365008e7862dc4b16?Expires=1594598400&Signature=cehEZep~VraU30TYJf58vLUrf29ArutmU6sRpO1yODVjm3C9pvFsOGYbLKKf-oeK8lX06sb5QnsTpD6tmHpqHHKQSbZB500HsEdnv2n-PFg4rNcWqP3pw-9KrsN3trEZBTjyXdysJVB93AkrsW1-4EHagp6C2cUYAzGyw1jBpJNH04Vt61nT9rD~Y07UpNVNrtv4U~11pJ2zvW6o2bwx3Uv6LDWNDbcngLb-pAioMZX92hMIXb1g1RGvQy02IpJ~ymEqYz-B4jIq~yLsZCezuQeADE6K7Iof9CG~UVTP7ZRthbC41Af-A4Yb2PMmIoc5x5cmSAkRZ7HshJ8HspsneQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+            alt="Profile Photo" />
+          <div class="sidebar-profile-label-group">
+            <div class="sidebar-profile-name">Admin</div>
+            <div class="sidebar-profile-privelege">Admin</div>
+          </div>
+        </a>
+        <div class="sidebar-profile-action">
+          <a href="#">
+            <span class="material-icons">keyboard_arrow_down</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </ul>
+
+  <!-- End of Sidebar -->
+
+  <!-- Content Wrapper -->
+  <div id="content-wrapper" class="d-flex flex-column">
+
+    <!-- Main Content -->
+    <div id="content">
+
+      <!-- Topbar -->
+      <nav class="navbar navbar-expand navbar-light bg-white topbar static-top">
+
+        <!-- Sidebar Toggle (Topbar) -->
+        <button id="sidebarToggleTop" class="btn btn-link d-md-none mr-3">
+          <span class="material-icons">menu</span>
+        </button>
+
+        <!-- Page Heading -->
+        <div class="d-sm-flex align-items-center justify-content-between top-bar-title">
+          <h1 class="h3 mb-0"><a class="nav-link" href="#">
+              <span class="material-icons">{{ topbar.icon }}</span>
+              <span>{{ topbar.title }}</span></a></h1>
+        </div>
+
+        <!-- Topbar Search -->
+        <form class="d-none d-sm-inline-block form-inline navbar-search">
+          <div class="form-group has-search">
+            <span class="material-icons form-control-feedback">search</span>
+            <input type="text" class="form-control" placeholder="Search for Patients">
+          </div>
+        </form>
+
+        <!-- Topbar Navbar -->
+        <ul class="navbar-nav action-btn">
+
+          <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+          <li class="nav-item dropdown no-arrow d-sm-none">
+            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-search fa-fw"></i>
+            </a>
+            <!-- Dropdown - Search -->
+            <div class="dropdown-menu dropdown-menu-right p-3  animated--grow-in" aria-labelledby="searchDropdown">
+              <form class="form-inline mr-auto w-100 navbar-search">
+                <div class="input-group">
+                  <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">
+                      <i class="fas fa-search fa-sm"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </li>
+
+          {{> nav}}
+
+        </ul>
+
+      </nav>
+      <!-- End of Topbar -->
+
+      <!-- Begin Page Content -->
+      <div class="container-fluid">
+        <!-- Content Row -->
+        {{> content}}
+        <!-- End Content Row -->
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- End of Main Content -->
+
+  </div>
+  <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<!-- <a class="scroll-to-top rounded" href="#page-top">
+  <i class="fas fa-angle-up"></i>
+</a> -->
