@@ -14,7 +14,7 @@ module.exports = [
         handler: (request, reply) => {
             return reply.view('layout/clinic/main/main', { custom: {
               style: true,
-              styleName: 'signin'
+              styleNames: ['signin']
             } })
         }
     },
@@ -24,7 +24,7 @@ module.exports = [
         handler: (request, reply) => {
             return reply.view('layout/clinic/main/login-email', { custom: {
               style: true,
-              styleName: 'signin'
+              styleNames: ['signin']
             } })
         }
     },
@@ -34,7 +34,7 @@ module.exports = [
         handler: (request, reply) => {
             return reply.view('layout/clinic/register', { custom: {
               style: true,
-              styleName: 'signin'
+              styleNames: ['signin']
             } })
         }
     },
@@ -44,7 +44,7 @@ module.exports = [
         handler: (request, reply) => {
             return reply.view('layout/clinic/setup', { custom: {
               style: true,
-              styleName: 'signin'
+              styleNames: ['signin']
             } })
         }
     },
@@ -54,10 +54,38 @@ module.exports = [
         handler: (request, reply) => {
             return reply.view('layout/clinic/admin/dashboard', { custom: {
               style: true,
-              styleName: 'dashboard',
+              styleNames: [
+                'sbadmin',
+                'fullcalendar',
+                'dashboard'
+              ],
               script: true,
-              scriptName: 'dashboard'
-            }})
+              scriptNames: [
+                'moment.min',
+                'fullcalendar.min',
+                'dashboard'
+              ]
+            }, topbar: {
+                title: 'Dashboard Overview',
+                icon: 'trip_origin'
+            } })
+        }
+    },
+    {   // Clinic Dashboard Inactive
+        method: 'GET',
+        path: '/clinic/dashboard/inactive',
+        handler: (request, reply) => {
+            return reply.view('layout/clinic/admin/inactive', { custom: {
+              style: true,
+              styleNames: [
+                'sbadmin',
+                'dashboard',
+                'inactive'
+              ],
+            }, topbar: {
+                title: 'Dashboard Overview',
+                icon: 'trip_origin'
+            } })
         }
     },
     {   // Clinic Manage Patients / Basic Info
@@ -71,7 +99,17 @@ module.exports = [
         method: 'GET',
         path: '/clinic/appointments',
         handler: (request, reply) => {
-            return reply.view('layout/clinic/admin/appointments')
+            return reply.view('layout/clinic/admin/appointments', { custom: {
+              style: true,
+              styleNames: [
+                'sbadmin',
+                'dashboard',
+                'appointments'
+              ]
+            }, topbar: {
+                title: 'Manage Appointments',
+                icon: 'insert_invitation'
+            } })
         }
     },
     {   // Clinic Appointments Add (Select Patient)
@@ -80,7 +118,7 @@ module.exports = [
         handler: (request, reply) => {
             return reply.view('layout/clinic/admin/appointments/add-1', { custom: {
               style: true,
-              styleName: 'full-page-form'
+              styleNames: ['full-page-form']
             } })
         }
     },
@@ -90,7 +128,7 @@ module.exports = [
         handler: (request, reply) => {
             return reply.view('layout/clinic/admin/appointments/add-2', { custom: {
               style: true,
-              styleName: 'full-page-form'
+              styleNames: ['full-page-form']
             } })
         }
     },
@@ -100,7 +138,7 @@ module.exports = [
         handler: (request, reply) => {
             return reply.view('layout/clinic/admin/appointments/add-3', { custom: {
               style: true,
-              styleName: 'full-page-form'
+              styleNames: ['full-page-form']
             } })
         }
     },
@@ -108,7 +146,16 @@ module.exports = [
         method: 'GET',
         path: '/clinic/patients',
         handler: (request, reply) => {
-            return reply.view('layout/clinic/admin/patients/patients')
+            return reply.view('layout/clinic/admin/patients/patients', { custom: {
+              style: true,
+              styleNames: [
+                'sbadmin',
+                'dashboard'
+              ]
+            }, topbar: {
+                title: 'Manage Patients',
+                icon: 'people'
+            } })
         }
     },
     {   // Clinic Patient Basic Info
@@ -150,7 +197,16 @@ module.exports = [
         method: 'GET',
         path: '/clinic/treatments',
         handler: (request, reply) => {
-            return reply.view('layout/clinic/admin/treatments/treatments')
+            return reply.view('layout/clinic/admin/treatments/treatments', { custom: {
+              style: true,
+              styleNames: [
+                'sbadmin',
+                'dashboard'
+              ]
+            }, topbar: {
+                title: 'Manage Services',
+                icon: ''
+            } })
         }
     },
     {   // Clinic New Treatments
