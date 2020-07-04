@@ -1,0 +1,91 @@
+{{#> admin-dashboard }}
+  {{#*inline "nav"}}
+    <li class="nav-item action-btn no-arrow mx-1">
+      <a class="nav-link nav-add-btn" href="#">
+        <span class="material-icons">add_circle</span>
+      </a>
+    </li>
+  {{/inline}}
+  {{#*inline "content"}}
+    <div class="row">
+
+      <div class="col">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Date</th>
+              <th scope="col">Time</th>
+              <th scope="col">Patient</th>
+              <th scope="col">Doctor</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>July 4, 2020</td>
+              <td>9:00 AM</td>
+              <td>Patient Name</td>
+              <td>Doctors Name</td>
+              <td>
+                <div class="dropdown">
+                  <button class="btn table-action-btn" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="material-icons">more_horiz</span>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <a class="dropdown-item" href="#">Complete appointment</a>
+                    <a class="dropdown-item" href="#">Edit appointment</a>
+                    <a class="dropdown-item" href="#">Reschedule appointment</a>
+                    <a class="dropdown-item" href="#">Archive appointment</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>July 8, 2020</td>
+              <td>9:00 AM</td>
+              <td>Patient Name</td>
+              <td>Doctors Name</td>
+              <td>
+                <div class="dropdown">
+                  <button class="btn table-action-btn" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="material-icons">more_horiz</span>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <a class="dropdown-item" href="#">Complete appointment</a>
+                    <a class="dropdown-item" href="#">Edit appointment</a>
+                    <a class="dropdown-item" href="#">Reschedule appointment</a>
+                    <a class="dropdown-item" href="#">Archive appointment</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>July 9, 2020</td>
+              <td>9:00 AM</td>
+              <td>Patient Name</td>
+              <td>Doctors Name</td>
+              <td>
+                <div class="dropdown">
+                  <button class="btn table-action-btn" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="material-icons">more_horiz</span>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                    <a class="dropdown-item" href="#">Complete appointment</a>
+                    <a class="dropdown-item" href="#">Edit appointment</a>
+                    <a class="dropdown-item" href="#">Reschedule appointment</a>
+                    <a class="dropdown-item" href="#">Archive appointment</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  {{/inline}}
+  {{/admin-dashboard }}

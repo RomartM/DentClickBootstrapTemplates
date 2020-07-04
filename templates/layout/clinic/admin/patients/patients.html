@@ -1,0 +1,95 @@
+{{#> admin-dashboard }}
+  {{#*inline "nav"}}
+    <li class="nav-item action-btn no-arrow mx-1">
+      <a class="nav-link nav-add-btn" href="#">
+        <span class="material-icons">add_circle</span>
+      </a>
+    </li>
+  {{/inline}}
+  {{#*inline "content"}}
+    <div class="row">
+
+      <div class="col">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Age</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Blood Type</th>
+              <th scope="col">Birthday</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td><a href="#">Patient Name</a></td>
+              <td>24</td>
+              <td>Famale</td>
+              <td>A</td>
+              <td>Nov 19, 1995</td>
+              <td>
+                <div class="dropdown">
+                  <button class="btn table-action-btn" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="material-icons">more_horiz</span>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <a class="dropdown-item" href="#">View Information</a>
+                    <a class="dropdown-item" href="#">Edit Information</a>
+                    <a class="dropdown-item" href="#">Add appointment</a>
+                    <a class="dropdown-item" href="#">Archive patient</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td><a href="#">Patient Name</a></td>
+              <td>24</td>
+              <td>Famale</td>
+              <td>A</td>
+              <td>Nov 19, 1995</td>
+              <td>
+                <div class="dropdown">
+                  <button class="btn table-action-btn" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="material-icons">more_horiz</span>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <a class="dropdown-item" href="#">View Information</a>
+                    <a class="dropdown-item" href="#">Edit Information</a>
+                    <a class="dropdown-item" href="#">Add appointment</a>
+                    <a class="dropdown-item" href="#">Archive patient</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td><a href="#">Patient Name</a></td>
+              <td>22</td>
+              <td>Male</td>
+              <td>A</td>
+              <td>Nov 19, 1998</td>
+              <td>
+                <div class="dropdown">
+                  <button class="btn table-action-btn" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="material-icons">more_horiz</span>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                    <a class="dropdown-item" href="#">View Information</a>
+                    <a class="dropdown-item" href="#">Edit Information</a>
+                    <a class="dropdown-item" href="#">Add appointment</a>
+                    <a class="dropdown-item" href="#">Archive patient</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  {{/inline}}
+  {{/admin-dashboard }}

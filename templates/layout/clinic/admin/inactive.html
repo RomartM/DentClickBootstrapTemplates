@@ -1,0 +1,99 @@
+{{#> admin-dashboard }}
+  {{#*inline "nav"}}
+    <li class="nav-item dropdown notification-btn no-arrow mx-1">
+      <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="material-icons">notifications</span>
+        <!-- Counter - Notifications -->
+        <span class="badge badge-danger badge-counter">7</span>
+      </a>
+      <!-- Dropdown - Notification -->
+      <div class="dropdown-list dropdown-menu dropdown-menu-right  animated--grow-in" aria-labelledby="messagesDropdown">
+        <h6 class="dropdown-header">
+          Message Center
+        </h6>
+        <a class="dropdown-item d-flex align-items-center" href="#">
+          <div class="dropdown-list-image mr-3">
+            <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+            <div class="status-indicator bg-success"></div>
+          </div>
+          <div class="font-weight-bold">
+            <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
+            <div class="small text-gray-500">Emily Fowler · 58m</div>
+          </div>
+        </a>
+        <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+      </div>
+    </li>
+  {{/inline}}
+  {{#*inline "content"}}
+    <div class="row dashboard-cards">
+      <div class="dashboard-inactive">
+        <div class="inactive-wrapper">
+          <a class="btn btn-lg btn-primary btn-block" href="#">Request account activation</a>
+          <a class="btn btn-lg btn-primary btn-block btn-border" href="#">Contact Developer</a>
+        </div>
+      </div>
+
+      <!-- Completed Appointments -->
+      <div class="col-xl-4 col-md-6 mb-4">
+        <div class="card h-100 py-2 card-green">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="font-weight-bold text-primary text-uppercase mb-1 card-label">Completed Appointments</div>
+                <div class="h5 mb-0 font-weight-bold text-gray-800 card-value">3</div>
+              </div>
+              <div class="col-auto">
+                <i class="fas fa-calendar fa-2x text-gray-300"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Upcomming Appointments -->
+      <div class="col-xl-4 col-md-6 mb-4">
+        <div class="card h-100 py-2 card-blue">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="font-weight-bold text-primary text-uppercase mb-1 card-label">Upcomming Appointments</div>
+                <div class="h5 mb-0 font-weight-bold text-gray-800 card-value">2</div>
+              </div>
+              <div class="col-auto">
+                <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pending Requests -->
+      <div class="col-xl-4 col-md-6 mb-4">
+        <div class="card h-100 py-2 card-purple">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="font-weight-bold text-primary text-uppercase mb-1 card-label">Pending Requests</div>
+                <div class="row no-gutters align-items-center">
+                  <div class="col-auto">
+                    <div class="h5 mb-0 font-weight-bold text-gray-800 card-value">1</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Row -->
+      <div class="row calendar-wrapper">
+        <div id="calendar"></div>
+      </div>
+
+    </div>
+  {{/inline}}
+{{/admin-dashboard }}

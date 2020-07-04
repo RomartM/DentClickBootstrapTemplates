@@ -1,0 +1,61 @@
+{{#> admin-dashboard }}
+  {{#*inline "nav"}}
+    <li class="nav-item action-btn no-arrow mx-1">
+      <div class="dropdown">
+        <a class="nav-link nav-add-btn" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="material-icons">add_circle</span>
+        </a>
+        <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuButton2">
+          <a class="dropdown-item" href="#">Add new service</a>
+          <a class="dropdown-item" href="#">Add new category</a>
+        </div>
+      </div>
+    </li>
+  {{/inline}}
+  {{#*inline "content"}}
+    <div class="row">
+
+      <div class="col">
+        <div class="m-3">
+          <button type="button" class="btn btn-primary">Treatments List</button>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Category</th>
+              <th scope="col">Treatment Name</th>
+              <th scope="col">Description</th>
+              <th scope="col">Price</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>General Dentestry</td>
+              <td>Consultation</td>
+              <td>Checkup and treatment plan</td>
+              <td>PHP 0.00</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Cleaning and Polishing</td>
+              <td>Oral Prohylaxis</td>
+              <td>Checkup and treatment plan</td>
+              <td>PHP 1250.00</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Cleaning and Polishing</td>
+              <td>Scaling/Root Planning and Cleaning</td>
+              <td>Checkup and treatment plan</td>
+              <td>PHP 8,700.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  {{/inline}}
+  {{/admin-dashboard }}
